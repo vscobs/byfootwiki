@@ -24,7 +24,7 @@
 .toc-container, 
 .table-of-contents {
     position: fixed !important;    /* Lock it in place */
-    right: 50px !important;        /* Push it to the far right edge */
+    right: 40px !important;        /* Push it to the far right edge */
     width: 220px !important;       /* Make it slightly narrower to save space */
     max-width: 20vw !important;    /* Never let it take more than 20% of screen */
     margin-right: 0 !important;
@@ -40,7 +40,7 @@ main,
     max-width: 1400px !important; 
     
     /* 3. Shift it to the left to use the new empty space */
-    margin-left: 20px !important; 
+    margin-left: 0px !important; 
     margin-right: 0 !important;
     
     /* 4. Ensure padding doesn't mess up the calculation */
