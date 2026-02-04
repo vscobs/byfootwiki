@@ -42,20 +42,3 @@ main,
     /* 3. Shift it to the left to use the new empty space */
     margin-left: 0px !important; 
     margin-right: 0px !important;
-    
-    /* 4. Ensure padding doesn't mess up the calculation */
-    box-sizing: border-box !important;
-}
-
-/* --- 3. MOBILE SAFETY --- */
-/* On phones, we don't want this layout or things will break */
-@media screen and (max-width: 1000px) {
-    main, .content {
-        width: 100% !important;
-        margin: 0 auto !important;
-    }
-    .sidebar-right {
-        position: relative !important; /* Let it fall to the bottom on mobile */
-        width: 100% !important;
-    }
-}
