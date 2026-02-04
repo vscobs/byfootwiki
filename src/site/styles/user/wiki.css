@@ -18,22 +18,47 @@
     width: 100%; /* Ensures the text container spans the full width */
 }
 
-/* --- UNIVERSAL FIXES FOR PUBLISHED SITE --- */
-
-/* 1. WIDER CONTENT 
-   Target generic containers usually found in Digital Garden sites */
-main, .content, .wrapper, body {
-    /* Increase the reading width */
-    max-width: 1200px !important; 
-    margin: 0 auto; /* Keep it centered */
+/* --- 1. PUSH TABLE OF CONTENTS TO THE RIGHT --- */
+/* Target the right sidebar container */
+.sidebar-right, 
+.toc-container, 
+.table-of-contents {
+    position: fixed !important;    /* Lock it in place */
+    right: 10px !important;        /* Push it to the far right edge */
+    width: 220px !important;       /* Make it slightly narrower to save space */
+    max-width: 20vw !important;    /* Never let it take more than 20% of screen */
+    margin-right: 0 !important;
+    z-index: 100;                  /* Ensure it floats above other things */
 }
 
-/* 2. PROTECT THE TOC (Right Sidebar)
-   Ensure the content doesn't push the table of contents off-screen */
-@media screen and (min-width: 1000px) {
+/* --- 2. WIDEN THE MAIN CONTENT AREA --- */
+/* Target the note content */
+main, 
+.content, 
+.markdown-preview-view {
+    /* 1. Calculate width: 100% of screen minus the space for TOC (250px) */
+    width: calc(100% - 250px) !important; 
+    
+    /* 2. Allow it to get much wider than the default */
+    max-width: 1400px !important; 
+    
+    /* 3. Shift it to the left to use the new empty space */
+    margin-left: 20px !important; 
+    margin-right: 0 !important;
+    
+    /* 4. Ensure padding doesn't mess up the calculation */
+    box-sizing: border-box !important;
+}
+
+/* --- 3. MOBILE SAFETY --- */
+/* On phones, we don't want this layout or things will break */
+@media screen and (max-width: 1000px) {
     main, .content {
-        /* Leave 250px-300px on the right for the TOC */
-        padding-right: 300px !important; 
-        box-sizing: border-box; /* Ensures padding is counted in width */
+        width: 100% !important;
+        margin: 0 auto !important;
+    }
+    .sidebar-right {
+        position: relative !important; /* Let it fall to the bottom on mobile */
+        width: 100% !important;
     }
 }
