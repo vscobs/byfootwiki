@@ -33,6 +33,15 @@
     z-index: 100;                  /* Ensure it floats above other things */
 }
 
+.search-button align-icon {
+    position: fixed !important;    /* Lock it in place */
+    right: 40px !important;        /* Push it to the far right edge */
+    width: 220px !important;       /* Make it slightly narrower to save space */
+    max-width: 20vw !important;    /* Never let it take more than 20% of screen */
+    margin-right: 0 !important;
+    z-index: 100;                  /* Ensure it floats above other things */
+}
+
 main, 
 .content, 
 .markdown-preview-view {
