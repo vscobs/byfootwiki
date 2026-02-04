@@ -37,9 +37,9 @@ main,
 .content, 
 .markdown-preview-view {
     /* 2. Allow it to get much wider than the default */
-    max-width: 100px !important; 
+    max-width: 1000px !important; 
 
     /* 3. Shift it to the left to use the new empty space */
-    margin-left: 50px !important; 
+    margin-left: 500px !important; 
     margin-right: 0px !important;
 }
