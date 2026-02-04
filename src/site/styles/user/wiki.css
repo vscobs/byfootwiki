@@ -1,7 +1,7 @@
 /* --- FIX 1: WIDEN THE PAGE (Safely) --- */
 body .content {
     /* 1. Allow it to be much wider */
-    max-width: 95% !important; 
+    max-width: 80% !important; 
     
     /* 2. DO NOT use 'margin: 0 auto' here. 
        Let the theme handle the alignment so it doesn't hit the sidebar. */
@@ -13,5 +13,4 @@ body .content {
 h1, h2, h3, h4, h5, h6 {
     width: fit-content !important; /* Force it to hug the text */
     min-width: 0;      /* Safety fix for some browsers */
-    padding-right: 2rem; /* Adds nice spacing after the word */
 }
