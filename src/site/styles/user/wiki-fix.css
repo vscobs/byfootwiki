@@ -1,0 +1,10 @@
+/* 1. Remove the Icon (Pencil/Info) in Infoboxes */
+.callout[data-callout*="infobox"] .callout-icon {
+    display: none !important;
+}
+
+/* 2. Hide specific "Edit" buttons added by plugins (e.g., Metadata Menu/Callout Manager) */
+.callout[data-callout*="infobox"] .callout-edit-button, 
+.callout[data-callout*="infobox"] .metadata-menu-edit-button {
+    display: none !important;
+}

@@ -1,0 +1,138 @@
+/* --- INFOBOX CONTAINER FIXES --- */
+.callout[data-callout="infobox"] {
+    /* 1. Fix the "Ridiculous Space" */
+    max-width: 300px !important;    /* Stop it from stretching too wide */
+    width: 100% !important;         /* Fill up to the max-width */
+    margin-left: 15px !important;   /* Only small gap between text and box */
+    
+    /* Optional: Remove the outer border/background if you want a cleaner look */
+    /* border: none !important; */
+    /* background: transparent !important; */
+}
+
+/* --- TABLE TRANSPARENCY (The "Two Columns" Look) --- */
+
+/* Remove the outer table border and spacing */
+.callout[data-callout="infobox"] table {
+    border: none !important;
+    border-collapse: collapse !important;
+    width: 100% !important;
+    margin: 0 !important;
+}
+
+/* Remove cell borders, backgrounds, and shadows */
+.callout[data-callout="infobox"] table td,
+.callout[data-callout="infobox"] table th,
+.callout[data-callout="infobox"] table tr {
+    border: none !important;                  /* Kills the grid lines */
+    background-color: transparent !important; /* Kills the alternating row colors */
+    box-shadow: none !important;              /* Kills the subtle Obsidian shadows */
+    padding: 4px 0px !important;              /* Tightens vertical spacing */
+}
+
+/* Optional: Styling the "Keys" (Left Column) to look like labels */
+.callout[data-callout="infobox"] table td:first-child {
+    font-weight: bold;
+    color: var(--text-muted); /* Makes the label slightly softer gray */
+    padding-right: 15px !important; /* Adds space between label and value */
+    white-space: nowrap; /* Prevents short labels from wrapping awkwardly */
+    vertical-align: top;
+}
+
+/* --- INFOBOX TABLE TRANSPARENCY FIX --- */
+
+/* 1. Reset the main table elements to be transparent */
+.callout[data-callout*="infobox"] table,
+.callout[data-callout*="infobox"] table tbody,
+.callout[data-callout*="infobox"] table tr,
+.callout[data-callout*="infobox"] table td,
+.callout[data-callout*="infobox"] table th {
+    background-color: transparent !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* 2. SPECIFICALLY kill the "Zebra Striping" (the alternating gray rows) */
+.callout[data-callout*="infobox"] table tr:nth-child(even),
+.callout[data-callout*="infobox"] table tr:nth-child(odd),
+.callout[data-callout*="infobox"] table tr:hover {
+    background-color: transparent !important;
+    background: transparent !important;
+}
+
+/* --- ADJUST TABLE PADDING/SPACING --- */
+
+/* 1. Control the vertical height of rows */
+.callout[data-callout*="infobox"] table td {
+    /* Syntax: [Top/Bottom] [Left/Right] */
+    padding: 2px 2px !important; 
+}
+
+/* 2. Control the gap between the "Label" and the "Value" columns */
+.callout[data-callout*="infobox"] table td:first-child {
+    padding-right: 10px !important; /* Increases the empty space in the middle */
+    padding-left: 10px !important
+}
+
+/* --- MAIN NOTE HEADER SPACING --- */
+
+/* Targets headers in both Editing (Live Preview) and Reading modes */
+.markdown-source-view.mod-cm6 .cm-header,
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6 {
+    
+    /* Adjust these numbers to your liking */
+    margin-top: 10px !important;    /* Space ABOVE the header */
+    margin-bottom: -10px !important; /* Space BELOW the header */
+    
+    /* Optional: Fix line-height if headers look too "squashed" */
+    line-height: 1.3 !important; 
+}
+
+/* Center everything inside [!infobox] */
+.callout[data-callout="infobox"] .callout-content {
+    text-align: center;
+}
+
+/* 3. TABLES: Center and Pull Up */
+.callout[data-callout="infobox"] table {
+    margin-left: auto;
+    margin-right: auto;
+    /* This negative margin pulls the table up closer to the text */
+    margin-top: -10px !important; 
+}
+
+/* 4. LISTS: Center and Pull Up */
+.callout[data-callout="infobox"] ul,
+.callout[data-callout="infobox"] ol {
+    /* Pulls the list up closer to the text */
+    margin-top: -10px !important;
+    padding-inline-start: 0; /* Removes default left indentation */
+}
+
+/* 5. FIX BULLETS: Keep bullets next to centered text */
+.callout[data-callout="infobox"] li {
+    list-style-position: inside; /* Puts the bullet right next to the text */
+}
+
+.callout[data-callout="infobox"] img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* CONTROL THE IMAGE GAP HERE */
+    margin-bottom: -15px !important; 
+}
+
+/* --- TEXT WRAPPING FIXES --- */
+.callout[data-callout="infobox"] table td {
+    /* Prevents breaking words in the middle (no more "Vil-ean") */
+    word-break: keep-all !important; 
+    overflow-wrap: break-word !important;
+    hyphens: none !important;
+}
