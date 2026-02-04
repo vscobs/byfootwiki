@@ -3,6 +3,7 @@
 ---
 
 > [!infobox|right] Yalia
+> ![Yalia.png](/img/user/Images/Yalia.png)
 > *"?"*
 > 
 > | | |
