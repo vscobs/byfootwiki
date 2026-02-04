@@ -20,9 +20,9 @@
 
 /* --- 1. PUSH TABLE OF CONTENTS TO THE RIGHT --- */
 /* Target the right sidebar container */
-.sidebar-right, 
-.toc-container, 
-.table-of-contents {
+.sidebar, 
+.toc, 
+.toc-container {
     position: fixed !important;    /* Lock it in place */
     right: 40px !important;        /* Push it to the far right edge */
     width: 220px !important;       /* Make it slightly narrower to save space */
