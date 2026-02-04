@@ -2,7 +2,6 @@
 {"dg-publish":true,"permalink":"/geography/icosachores/colmetry/colmetry/","tags":["Geography","Icosachores"]}
 ---
 
----
 > [!infobox|right] Colmetry
 > | | |
 > |---|---|

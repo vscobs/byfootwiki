@@ -39,12 +39,12 @@ According to the region code **43 52**:
 The coat of arms of Killesteeth is described as:
 > *Sable, a killes’ head issuant from the dexter proper, jaws open and armed Argent, holding in its mouth an annulet Or.*
 
-The [[Geography/Icosachores/COLMETRY/Killesteeth/Killes\|killes]] is the emblematic creature of the district of Killesteeth, intimately associated with the city of [[Geography/Icosachores/COLMETRY/Killesteeth/Killes\|Killes]] and [[Society/Houses/House Killes\|House Killes]].
+The [[Root Resources/Fauna/Mammals/Killes (Animal)\|killes]] is the emblematic creature of the district of Killesteeth, intimately associated with the city of [[Geography/Icosachores/COLMETRY/Killesteeth/Killes\|Killes]] and [[Society/Houses/House Killes\|House Killes]].
 # Biodiversity
 The following species can be encountered in the district of Killesteeth:
 ## Fauna
 - [[Root Resources/Fauna/Arthropods/Petalden Mite\|Petalden Mite]]
-- [[Geography/Icosachores/COLMETRY/Killesteeth/Killes\|Killes]]
+- [[Root Resources/Fauna/Mammals/Killes (Animal)\|Killes]]
 - [[Root Resources/Fauna/Mammals/Snapmetun\|Snapmetun]]
 ## Flora
 - [[Root Resources/Flora/Dendrophytes/Common Ambrebule\|Common Ambrebule]]
