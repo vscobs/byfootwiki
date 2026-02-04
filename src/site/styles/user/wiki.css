@@ -50,7 +50,7 @@ main,
        * WANT IT WIDER? Change 50px to 10px.
        * WANT IT NARROWER? Change 50px to 300px (to avoid the Table of Contents).
     */
-    width: calc(100% - 200px) !important; 
+    width: calc(100% - 450px) !important; 
     
     /* 3. UNLOCK THE MAX LIMIT
        We set this to 'none' or '100%' so the 'width' above is the only boss. */
