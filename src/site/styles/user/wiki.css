@@ -37,11 +37,11 @@ main,
 .content, 
 .markdown-preview-view {    
     /* 2. Allow it to get much wider than the default */
-    max-width: 1200px !important; 
+    max-width: 1000px !important; 
     
     /* 3. Shift it to the left to use the new empty space */
     margin-left: 0px !important; 
-    margin-right: 20px !important;
+    margin-right: 200px !important;
     
     /* 4. Ensure padding doesn't mess up the calculation */
     box-sizing: border-box !important;
