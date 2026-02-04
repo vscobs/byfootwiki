@@ -38,8 +38,10 @@ main,
 .markdown-preview-view {
     /* 2. Allow it to get much wider than the default */
     max-width: 1000px !important; 
-
-    /* 3. Shift it to the left to use the new empty space */
-    margin-left: 1px !important; 
-    margin-right: 2px !important;
+    
+    /* 1. The amount you want to push it to the right */
+    margin-left: 150px !important; 
+    
+    /* 2. Important: Subtract that margin from the width so it fits */
+    width: calc(100% - 170px) !important; /* 150px margin + 20px safety buffer */
 }
