@@ -3,3 +3,4 @@
 ---
 
 *Welcome to By Foot!*
+[[Geography/Icosachores/COLMETRY/Colmetry\|Colmetry]]
