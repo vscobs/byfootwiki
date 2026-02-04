@@ -27,13 +27,3 @@ main, .content, .wrapper, body {
     max-width: 1200px !important; 
     margin: 0 auto; /* Keep it centered */
 }
-
-/* 2. PROTECT THE TOC (Right Sidebar)
-   Ensure the content doesn't push the table of contents off-screen */
-@media screen and (min-width: 1000px) {
-    main, .content {
-        /* Leave 250px-300px on the right for the TOC */
-        padding-right: 100px !important; 
-        box-sizing: border-box; /* Ensures padding is counted in width */
-    }
-}
