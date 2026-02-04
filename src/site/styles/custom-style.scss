@@ -1,13 +1,31 @@
+/* WIKIPEDIA STYLE OVERRIDE */
+
+/* 1. The Background and Text */
 body {
-    /***
-      ADD YOUR CUSTOM STYLING HERE. (INSIDE THE body {...} section.)
-      IT WILL TAKE PRECEDENCE OVER THE STYLING IN THE STYLE.CSS FILE.
-   ***/
-    //  background-color: white;
-    //  .content {
-    //   font-size: 14px;
-    //  }
-    //  h1 {
-    //   color: black;
-    //  }
+    background-color: #ffffff !important; /* Pure White */
+    color: #202122 !important; /* Dark Grey Text */
+    font-family: sans-serif !important; /* Standard clean font */
+}
+
+/* 2. The Headings (The classic Serif look) */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Linux Libertine', 'Georgia', 'Times', serif !important;
+    border-bottom: 1px solid #a2a9b1 !important; /* The thin line under headers */
+    padding-bottom: 5px;
+    margin-top: 1em;
+}
+
+/* 3. The Links (Classic Wiki Blue) */
+a {
+    color: #0645ad !important;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline !important;
+}
+
+/* 4. Internal Links (removing the icon if you want a clean look) */
+.internal-link::before {
+    display: none !important;
 }
