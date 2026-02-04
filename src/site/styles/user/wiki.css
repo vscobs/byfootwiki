@@ -33,7 +33,7 @@ main, .content, .wrapper, body {
 @media screen and (min-width: 1000px) {
     main, .content {
         /* Leave 250px-300px on the right for the TOC */
-        padding-right: 300px !important; 
+        padding-right: 100px !important; 
         box-sizing: border-box; /* Ensures padding is counted in width */
     }
 }
