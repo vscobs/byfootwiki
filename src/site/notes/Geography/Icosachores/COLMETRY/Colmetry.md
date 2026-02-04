@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/geography/icosachores/colmetry/colmetry/","tags":["Geography","Icosachores","gardenEntry"],"dgEnableSearch":true,"dgShowToc":true}
+{"dg-publish":true,"permalink":"/geography/icosachores/colmetry/colmetry/","tags":["Geography","Icosachores"],"dgEnableSearch":true,"dgShowToc":true}
 ---
 
 ---
