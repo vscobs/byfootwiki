@@ -41,7 +41,18 @@ main,
     
     /* 1. The amount you want to push it to the right */
     margin-left: 150px !important; 
+
+    /* 2. EXTEND TO THE RIGHT
+       This calculates the total width based on the left margin. 
+       
+       Logic: 100% of screen - 150px (Left Margin) - 50px (Right Safety Gap) 
+       
+       * WANT IT WIDER? Change 50px to 10px.
+       * WANT IT NARROWER? Change 50px to 300px (to avoid the Table of Contents).
+    */
+    width: calc(100% - 200px) !important; 
     
-    /* 2. Important: Subtract that margin from the width so it fits */
-    width: calc(100% - 170px) !important; /* 150px margin + 20px safety buffer */
+    /* 3. UNLOCK THE MAX LIMIT
+       We set this to 'none' or '100%' so the 'width' above is the only boss. */
+    max-width: 100% !important;
 }
