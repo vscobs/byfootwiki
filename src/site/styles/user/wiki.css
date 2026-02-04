@@ -40,6 +40,6 @@ main,
     max-width: 1000px !important; 
 
     /* 3. Shift it to the left to use the new empty space */
-    margin-left: 1px !important; 
+    margin-left: 2px !important; 
     margin-right: 1px !important;
 }
