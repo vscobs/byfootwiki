@@ -1,0 +1,21 @@
+/* --- FIX 1: STOP LINES FROM CROSSING THE SCREEN --- */
+/* This forces headers to only be as wide as the text inside them, 
+   so the underline stops at the end of the word. */
+h1, h2, h3, h4, h5, h6 {
+    width: fit-content;
+    padding-right: 20px; /* Adds a little breathing room after the text */
+}
+
+/* --- FIX 2: MAKE THE CONTENT WIDER --- */
+/* The default template limits width to ~800px for "readability".
+   This expands it to use more of your screen. */
+body .content {
+    max-width: 1400px; /* Increase this number to make it wider */
+    width: 95%;        /* Ensures it doesn't touch the screen edges on mobile */
+    margin: 0 auto;    /* Keeps everything centered */
+}
+
+/* Optional: Adjust the font size if the lines feel too long now */
+body {
+    font-size: 1.1rem;
+}
