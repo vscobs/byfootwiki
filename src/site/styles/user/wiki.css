@@ -41,5 +41,5 @@ main,
 
     /* 3. Shift it to the left to use the new empty space */
     margin-left: 0px !important; 
-    margin-right: 50px !important;
+    margin-right: 0px !important;
 }
