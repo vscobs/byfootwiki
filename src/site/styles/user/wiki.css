@@ -24,7 +24,7 @@
 .toc-container, 
 .table-of-contents {
     position: fixed !important;    /* Lock it in place */
-    right: 10px !important;        /* Push it to the far right edge */
+    right: 50px !important;        /* Push it to the far right edge */
     width: 220px !important;       /* Make it slightly narrower to save space */
     max-width: 20vw !important;    /* Never let it take more than 20% of screen */
     margin-right: 0 !important;
@@ -35,10 +35,7 @@
 /* Target the note content */
 main, 
 .content, 
-.markdown-preview-view {
-    /* 1. Calculate width: 100% of screen minus the space for TOC (250px) */
-    width: calc(100% - 250px) !important; 
-    
+.markdown-preview-view {    
     /* 2. Allow it to get much wider than the default */
     max-width: 1400px !important; 
     
