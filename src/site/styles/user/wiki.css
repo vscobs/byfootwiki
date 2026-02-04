@@ -1,4 +1,19 @@
-/* Prevent header borders from crossing behind the infobox */
-h1, h2, h3, h4, h5, h6 {
-    overflow: hidden;
+/* Fix: Prevent Header underlines from crossing behind the Infobox */
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6 {
+    overflow: hidden; /* Triggers a Block Formatting Context */
+}
+
+/* Fix: Center the Infobox Title text */
+.callout[data-callout="infobox"] .callout-title {
+    justify-content: center; /* Centers the content horizontally */
+}
+
+.callout[data-callout="infobox"] .callout-title-inner {
+    text-align: center;
+    width: 100%; /* Ensures the text container spans the full width */
 }
