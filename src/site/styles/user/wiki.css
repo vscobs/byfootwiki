@@ -1,7 +1,1 @@
-/* --- FIX 2: STOP LINES CUTTING INFOBOXES --- */
-/* This forces the underline to stop at the end of the word 
-   so it doesn't slice through your floating images. */
-h1, h2, h3, h4, h5, h6 {
-    width: fit-content !important; /* Force it to hug the text */
-    min-width: 0;      /* Safety fix for some browsers */
-}
+
