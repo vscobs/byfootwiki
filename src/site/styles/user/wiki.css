@@ -37,5 +37,5 @@ main,
 .content, 
 .markdown-preview-view {
     /* 2. Allow it to get much wider than the default */
-    max-width: 1400px !important; 
+    max-width: 5000px !important; 
 }
