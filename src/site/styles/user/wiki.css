@@ -20,11 +20,11 @@
 
 /* --- 1. PUSH TABLE OF CONTENTS TO THE RIGHT --- */
 /* Target the right sidebar container */
-.sidebar, 
-.sidebar-container, 
+/*.sidebar-container, 
 .toc, 
 .toc-title-container, 
-.toc-container {
+.toc-container,*/
+.sidebar {
     position: fixed !important;    /* Lock it in place */
     right: 40px !important;        /* Push it to the far right edge */
     width: 220px !important;       /* Make it slightly narrower to save space */
