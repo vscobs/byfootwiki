@@ -17,3 +17,23 @@
     text-align: center;
     width: 100%; /* Ensures the text container spans the full width */
 }
+
+/* --- UNIVERSAL FIXES FOR PUBLISHED SITE --- */
+
+/* 1. WIDER CONTENT 
+   Target generic containers usually found in Digital Garden sites */
+main, .content, .wrapper, body {
+    /* Increase the reading width */
+    max-width: 1200px !important; 
+    margin: 0 auto; /* Keep it centered */
+}
+
+/* 2. PROTECT THE TOC (Right Sidebar)
+   Ensure the content doesn't push the table of contents off-screen */
+@media screen and (min-width: 1000px) {
+    main, .content {
+        /* Leave 250px-300px on the right for the TOC */
+        padding-right: 300px !important; 
+        box-sizing: border-box; /* Ensures padding is counted in width */
+    }
+}
