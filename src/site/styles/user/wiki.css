@@ -32,3 +32,10 @@
     margin-right: 0 !important;
     z-index: 100;                  /* Ensure it floats above other things */
 }
+
+main, 
+.content, 
+.markdown-preview-view {
+    /* 2. Allow it to get much wider than the default */
+    max-width: 1400px !important; 
+}
