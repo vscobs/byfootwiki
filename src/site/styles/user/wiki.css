@@ -1,21 +1,17 @@
-/* --- FIX 1: STOP LINES FROM CROSSING THE SCREEN --- */
-/* This forces headers to only be as wide as the text inside them, 
-   so the underline stops at the end of the word. */
-h1, h2, h3, h4, h5, h6 {
-    width: fit-content;
-    padding-right: 20px; /* Adds a little breathing room after the text */
-}
-
-/* --- FIX 2: MAKE THE CONTENT WIDER --- */
-/* The default template limits width to ~800px for "readability".
-   This expands it to use more of your screen. */
+/* --- FIX 1: WIDEN THE PAGE (Safely) --- */
 body .content {
-    max-width: 1400px; /* Increase this number to make it wider */
-    width: 95%;        /* Ensures it doesn't touch the screen edges on mobile */
-    margin: 0 auto;    /* Keeps everything centered */
+    /* 1. Allow it to be much wider */
+    max-width: 95% !important; 
+    
+    /* 2. DO NOT use 'margin: 0 auto' here. 
+       Let the theme handle the alignment so it doesn't hit the sidebar. */
 }
 
-/* Optional: Adjust the font size if the lines feel too long now */
-body {
-    font-size: 1.1rem;
+/* --- FIX 2: STOP LINES CUTTING INFOBOXES --- */
+/* This forces the underline to stop at the end of the word 
+   so it doesn't slice through your floating images. */
+h1, h2, h3, h4, h5, h6 {
+    width: fit-content !important; /* Force it to hug the text */
+    min-width: 0;      /* Safety fix for some browsers */
+    padding-right: 2rem; /* Adds nice spacing after the word */
 }
