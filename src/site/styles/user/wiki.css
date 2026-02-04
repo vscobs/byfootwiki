@@ -17,3 +17,33 @@
     text-align: center;
     width: 100%; /* Ensures the text container spans the full width */
 }
+
+/* --- CONTENT WIDTH ADJUSTMENT --- */
+
+/* 1. Define the new maximum width for the text */
+body {
+    /* Default is usually ~700px. 
+       1100px is wide but usually safe for screens with a TOC. */
+    --file-line-width: 1000px !important; 
+    
+    /* Optional: Increase the maximum width of images/videos to match */
+    --file-line-width-wide: 100% !important; 
+}
+
+/* 2. Apply the width to the container */
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
+    /* This tells the content to use your new wider variable */
+    max-width: var(--file-line-width) !important;
+    width: 100% !important; 
+}
+
+/* 3. SAFETY BUFFER (Crucial for TOC protection) */
+/* Only apply this override on larger screens (Desktop) */
+@media screen and (min-width: 1000px) {
+    .markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
+        /* This ensures that if the screen gets tight, the text 
+           won't physically touch the TOC on the right. 
+           Adjust '40px' if you need more breathing room. */
+        padding-right: 40px !important; 
+    }
+}
