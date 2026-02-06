@@ -3,6 +3,7 @@
 ---
 
 > [!infobox|right] City of Killes
+> ![KillesCity.png](/img/user/Images/KillesCity.png)
 > 
 > | | |
 > |---|---|
